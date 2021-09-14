@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakterien</title>
+	<style>
+	html{
+		font-family: sans-serif;
+	}
+	
+	button {
+		padding: 0;
+		border: none;
+		font: inherit;
+		color: inherit;
+		background-color: transparent;
+		cursor: pointer;
+	}
+
+	.btn {
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	margin: 2px 0;
+	border: solid 2px transparent;
+	border-radius: 0.4em;
+	padding: 0.5em 1em;
+	color: #ffffff;
+	background-color: #3d31ac;
+	}
+
+	.bottom-text{
+		float: right;
+		padding: 10px 20px 0px 0px;
+	}
+
+	a{
+		text-decoration: none;
+		color: black
+	}
+
+	a:hover{
+		color: #3d31ac;
+		border-bottom: 2px dotted #3d31ac;
+	}
+
+	</style>
+</head>
+<body>
+	<div style="height: 100%;">
+		<canvas id="chart" height="140%"></canvas>
+		<button class='btn' onclick="addMoreSamples(1)">Add 1</button>
+		<button class='btn' onclick="addMoreSamples(10)">Add 10</button>
+		<button class='btn' onclick="addMoreSamples(100)">Add 100</button>
+		<button class='btn' onclick="addMoreSamples(1000)">Add 1000</button>
+		<button class='btn' onclick="addMoreSamples(10000)">Add 10000</button>
+		<span class="bottom-text">Made for 🏫 by <a href="https://twitter.com/philfilmt">Pheeef</a> and powerd by <a href="https://chartjs.org">Charts.js</a><span>
+	</div>
+</body>
+
+<script src='./chart.js-3.5.1/package/dist/chart.js'></script>
+<script src='main.js'></script>
+</html>
